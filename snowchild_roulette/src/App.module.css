@@ -1,0 +1,80 @@
+.mainCont {
+  box-sizing: border-box;
+  border-radius: 12px;
+  width: auto;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.items {
+  box-sizing: border-box;
+  width: 300px;
+  height: 700px;
+}
+
+.items img {
+  margin-top: 100px;
+  height: 500px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.centerItem {
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 5px;
+  width: 400px;
+  height: 700px;
+}
+
+.centerItem img {
+  height: 700px;
+  width: 400px;
+}
+
+.navigationButtons img {
+  margin-top: 350px;
+  margin-left: 10px;
+  border: none;
+  height: 50px;
+  width: 40px;
+}
+
+.navigationButtons img:hover {
+  cursor: pointer;
+}
+
+.slider {
+  padding: 10px;
+  height: 5px;
+  display: flex;
+  column-gap: 30px;
+  margin: auto;
+  width: fit-content;
+}
+
+.sliders {
+  box-sizing: border-box;
+  background-color: rgb(210, 210, 210);
+  font-size: 0;
+  color: white;
+  width: 50px;
+  border-radius: 12px;
+}
+
+.slider:hover {
+  cursor: pointer;
+}
+
+.active {
+  box-sizing: border-box;
+  font-size: 0;
+  background-color: grey;
+  color: white;
+  width: 50px;
+  border-radius: 12px;
+}
