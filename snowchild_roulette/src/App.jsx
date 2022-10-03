@@ -69,7 +69,27 @@ const App = () => {
     }
   };
 
-  console.log(countItem);
+  const clickSlider = (i) => {
+    console.log(i);
+    if (i === array.length) {
+      setCount(i - 1);
+      setCountItem(i - 1);
+      setRightImage(0);
+      setLeftImage(i - 2);
+      return;
+    } else if (i === 1) {
+      setCount(0);
+      setCountItem(0);
+      setRightImage(i);
+      setLeftImage(array.length - 1);
+      return;
+    }
+
+    setCount(i - 1);
+    setCountItem(i - 1);
+    setRightImage(i);
+    setLeftImage(i - 2);
+  };
 
   return (
     <>
@@ -97,6 +117,7 @@ const App = () => {
               countItem + 1 !== item ? `${styles.sliders}` : `${styles.active}`
             }
             key={key}
+            onClick={() => clickSlider(item)}
           >
             {item}
           </div>
